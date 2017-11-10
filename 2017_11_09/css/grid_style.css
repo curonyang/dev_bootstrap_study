@@ -1,0 +1,32 @@
+body{
+
+}
+
+.green{
+    background: green;
+    height: 100vh;
+}
+
+@media (max-width:575px){
+    .green{
+        background: green;
+        height: 100vh;
+    }
+}
+
+@media (min-width:575px){
+    .green{
+        background: red;
+        height: 100vh;
+    }
+}
+
+.grey{
+    background-color: blue;
+    height: 200px;
+}
+
+.gr{
+    background-color: green;
+    height: 200px;
+}

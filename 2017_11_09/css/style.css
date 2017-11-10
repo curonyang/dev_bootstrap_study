@@ -1,0 +1,5 @@
+body{
+    /*background-color: green;*/
+    background: url(../img/cat.jpg) no-repeat center fixed;
+    background-size: cover;
+}
