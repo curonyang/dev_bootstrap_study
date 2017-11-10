@@ -1,5 +1,5 @@
-body{
-    /*background-color: green;*/
-    background: url(../img/cat.jpg) no-repeat center fixed;
-    background-size: cover;
+.con{
+    background-color:#a1a1a1;
+    height:100vh;
+    margin-top:50px;
 }
