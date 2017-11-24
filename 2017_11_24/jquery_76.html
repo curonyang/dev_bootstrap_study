@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz76</title>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("ul").each(function(index){
+                console.log(index);
+                var $text = $(this).children("li");
+
+                if(index == 1){
+                    $($text).filter(":odd").empty();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+    </ul>
+     <ul>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li class="select">hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+    </ul>
+</body>
+</html>

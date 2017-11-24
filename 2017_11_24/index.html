@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+
+    <style>
+        #test1{
+            display: none;
+            width:400px;
+            background-color:pink;
+        }
+
+        #test2{
+            width:400px;
+            background-color:pink;
+        }
+
+        #test3{
+            display: none;
+            width:400px;
+            height:400px;
+            background-color:pink;
+        }
+
+        #test4{
+            width:400px;
+            height:400px;
+            background-color:pink;
+        }
+
+        #test5{
+            position: absolute;
+            width:400px;
+            height: 400px;
+            background-color:pink;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $(".select").hide();
+            <!--$(".select").show();-->
+
+            $("#test1").fadeIn(5000);
+            $("#test2").fadeOut(5000);
+            $("#test3").slideDown(4000);
+            $("#test4").slideUp(5000, function(){
+                alert("slideUp end");
+            });
+            $("#test5").animate({
+                "top" : 200,
+                "left" : 200
+            }, 5000, function(){
+                alert("animate end");
+            });
+        });
+    </script>
+
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li class="select">hello world</li>
+        <li>hello world</li>
+    </ul>
+
+    <div id="test1">hello world</div><br/>
+    <div id="test2">hello world</div><br/>
+    <div id="test3">hello world</div><br/>
+    <div id="test4">hello world</div><br/>
+    <div id="test5">hello world</div><br/>
+</body>
+</html>

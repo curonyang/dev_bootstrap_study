@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz72</title>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+     $(document).ready(function() {
+        $("ul").each(function(index){
+            console.log(index);
+            var $text = $(this).children("li");
+
+            if(index == 0){
+                $($text).filter(":odd").text("hello world");
+            }else{
+                $($text).filter(":even").text("안녕하세요");
+            }
+        });
+     });
+    </script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</body>
+</html>

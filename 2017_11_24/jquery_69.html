@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz69</title>
+    <style>
+        .hello{
+            position:relative;
+            width:100px;
+            height:100px;
+            background-color: black;
+            color:white;
+        }
+    </style>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".hello").css("left", 400);
+            $(".test").css({
+                "background":"green",
+                "color":"white",
+                "width":"50%",
+                "float":"left"
+            });
+         });
+    </script>
+</head>
+<body>
+    <div class="hello">hello</div>
+    <div class="test" id="one">
+        <img src="./img/boating.jpg" >
+        <h1>보트 그림</h1>
+    </div>
+    <div class="test" id="two">
+        <img src="./img/morning.jpg" >
+        <h1>산책 그림</h1>
+    </div>
+</body>
+</html>
